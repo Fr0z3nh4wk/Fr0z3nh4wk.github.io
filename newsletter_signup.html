@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Mining Systems Newsletter Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="showWelcomeMessage()">
+<header id="site-banner">
+    <div class="brand-row">
+        <div>
+            <h1>Newsletter Signup</h1>
+            <p>Register for Horizon Mining Systems updates.</p>
+        </div>
+        <img src="images/horizon_logo_mining.png" alt="Horizon Mining Systems mining equipment banner" class="logo">
+    </div>
+</header>
+<main>
+    <section class="form-card">
+        <h2>Horizon Mining Systems Ltd. Newsletter Signup</h2>
+        <p>Fields marked with <span class="required">*</span> are required data. Please complete the form and choose the services you would like to hear about.</p>
+
+        <!-- The form submits data using POST. The process page is a placeholder for server-side processing. -->
+        <form method="post" action="process.html" onsubmit="return validateNewsletterForm()">
+            <label for="firstName">First Name <span class="required">*</span></label>
+            <input type="text" id="firstName" name="firstName" maxlength="60" required>
+
+            <label for="lastName">Last Name <span class="required">*</span></label>
+            <input type="text" id="lastName" name="lastName" maxlength="60" required>
+
+            <label for="emailAddress">Email Address <span class="required">*</span></label>
+            <input type="email" id="emailAddress" name="emailAddress" maxlength="60" required>
+
+            <fieldset>
+                <legend>Age range</legend>
+                <label class="radio-option"><input type="radio" name="ageRange" value="15-25"> 15-25</label>
+                <label class="radio-option"><input type="radio" name="ageRange" value="26-35"> 26-35</label>
+                <label class="radio-option"><input type="radio" name="ageRange" value="36-45"> 36-45</label>
+                <label class="radio-option"><input type="radio" name="ageRange" value="46-55"> 46-55</label>
+                <label class="radio-option"><input type="radio" name="ageRange" value="55+"> 55+</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Services of interest</legend>
+                <label class="checkbox-option"><input type="checkbox" name="services" value="Mining Solutions"> Mining Solutions</label>
+                <label class="checkbox-option"><input type="checkbox" name="services" value="Equipment Systems"> Equipment Systems</label>
+                <label class="checkbox-option"><input type="checkbox" name="services" value="Safety and Environment"> Safety &amp; Environment</label>
+                <label class="checkbox-option"><input type="checkbox" name="services" value="Data and Analytics"> Data &amp; Analytics</label>
+                <label class="checkbox-option"><input type="checkbox" name="services" value="Support and Maintenance"> Support &amp; Maintenance</label>
+            </fieldset>
+
+            <label for="message">Questions or comments</label>
+            <textarea id="message" name="message" cols="60" rows="3" placeholder="Tell us what updates you are interested in."></textarea>
+
+            <div>
+                <input type="submit" value="Submit signup">
+                <input type="reset" value="Reset form">
+            </div>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2026 Horizon Mining Systems Ltd. | Newsletter signup</p>
+</footer>
+</body>
+</html>

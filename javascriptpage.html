@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Form Launch Page | Thomas Patterson</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header id="site-banner">
+    <div class="brand-row">
+        <div>
+            <h1>Newsletter Signup Launch Page</h1>
+            <p>This page opens the required HTML5 form in a new tab or window.</p>
+        </div>
+        <img src="images/horizon_logo_mining.png" alt="Horizon Mining Systems mining equipment banner" class="logo">
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="web_development.html">Web Development</a></li>
+            <li><a href="cybersecurity.html">Cyber Security</a></li>
+            <li><a href="data_analytics.html">Data Analytics</a></li>
+            <li><a href="communication.html">Communication</a></li>
+            <li><a class="active" href="javascriptpage.html">Newsletter Form</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="card">
+        <h2>Horizon Mining Systems newsletter form</h2>
+        <p>The button below uses JavaScript to open the newsletter signup page in a new tab or window. The signup page uses an onload alert and an onsubmit validation function.</p>
+        <button type="button" onclick="openNewsletterForm()">Open newsletter signup form</button>
+        <p class="small-note">If a browser blocks pop-ups, use this fallback link: <a href="newsletter_signup.html" target="_blank">Open newsletter signup form</a>.</p>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2026 Thomas Patterson | JavaScript page</p>
+</footer>
+</body>
+</html>
